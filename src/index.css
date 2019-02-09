@@ -12,3 +12,65 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+canvas {
+  display: block;
+  background-color: #dddddd;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.current-score {
+  left: 20px;
+}
+
+.top-score {
+  right: 20px;
+}
+
+.score {
+  display: block;
+  position: absolute;
+  top: 15px;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.endgame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 16px;
+  z-index: 1;
+  text-align: center;
+}
+
+button {
+  border: 4px solid #000000;
+  background-color: transparent;
+  color: #000000;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-family: 'PT Mono', serif;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#logo {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 60px;
+  z-index: 2;
+}
